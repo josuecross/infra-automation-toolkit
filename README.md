@@ -1,4 +1,4 @@
-\# 🛠️ Infra Automation Toolkit  
+# 🛠️ Infra Automation Toolkit  
 
 \*A collection of Python and Bash automation tools designed to diagnose, validate, and recover infrastructure servers in large-scale compute environments.\*
 
