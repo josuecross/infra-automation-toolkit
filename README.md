@@ -1,12 +1,12 @@
-\# 🛠️ Infra Automation Toolkit  
+# Infra Automation Toolkit  
 
-\*A collection of Python and Bash automation tools designed to diagnose, validate, and recover infrastructure servers in large-scale compute environments.\*
+*A collection of Python and Bash automation tools designed to diagnose, validate, and recover infrastructure servers in large-scale compute environments.*
 
 
 
-\## 🚀 Overview
+## Overview
 
-The \*\*Infra Automation Toolkit\*\* is a modular set of automation scripts created to standardize troubleshooting workflows, accelerate server bring-up, and reduce manual operational work across HPC, compute, and enterprise infrastructure.
+The **Infra Automation Toolkit** is a modular set of automation scripts created to standardize troubleshooting workflows, accelerate server bring-up, and reduce manual operational work across HPC, compute, and enterprise infrastructure.
 
 
 
@@ -14,7 +14,7 @@ These tools support environments where hundreds of servers require consistent ch
 
 
 
-This toolkit also serves as the automation backend for the \*\*AutoOps Resolver\*\* systems (PowerShell and Web versions).
+This toolkit also serves as the automation backend for the **AutoOps Resolver** systems (PowerShell and Web versions).
 
 
 
@@ -22,75 +22,75 @@ This toolkit also serves as the automation backend for the \*\*AutoOps Resolver\
 
 
 
-\## 🧩 Key Capabilities
+## Key Capabilities
 
 
 
-\### \*\*1. Host \& Network Diagnostics\*\*
+### **1. Host & Network Diagnostics**
 
-\- ICMP ping reachability  
+- ICMP ping reachability  
 
-\- SSH connectivity tests  
+- SSH connectivity tests  
 
-\- DNS lookup (forward and reverse)  
+- DNS lookup (forward and reverse)  
 
-\- Host vs BMC DNS consistency checks  
+- Host vs BMC DNS consistency checks  
 
-\- MAC/IP address validation  
+- MAC/IP address validation  
 
-\- BMC network reachability  
-
-
-
-\### \*\*2. Redfish Power Operations\*\*
-
-\- Power On  
-
-\- Graceful shutdown  
-
-\- Hard reset  
-
-\- AC Cycle  
-
-\- Boot mode configuration  
-
-\- Status polling with error handling  
+- BMC network reachability  
 
 
 
-\### \*\*3. Cobbler / PXE Rebuild Automation\*\*
+### **2. Redfish Power Operations**
 
-\- Trigger PXE restart  
+- Power On  
 
-\- Validate next-boot config  
+- Graceful shutdown  
 
-\- Poll server after boot  
+- Hard reset  
 
-\- Return structured results  
+- AC Cycle  
 
+- Boot mode configuration  
 
-
-\### \*\*4. Metadata Validation\*\*
-
-\- Extract serial numbers  
-
-\- Validate node-to-serial mapping  
-
-\- FQDN format validation  
-
-\- BMC/Host record consistency  
+- Status polling with error handling  
 
 
 
-\### \*\*5. Logging \& Structured Output\*\*
+### **3. Cobbler / PXE Rebuild Automation**
 
-\- JSON logs  
+- Trigger PXE restart  
 
-\- Human-readable summaries  
+- Validate next-boot config  
 
-\- Categorized errors  
+- Poll server after boot  
 
-\- Timestamped logging  
+- Return structured results  
+
+
+
+### **4. Metadata Validation**
+
+- Extract serial numbers  
+
+- Validate node-to-serial mapping  
+
+- FQDN format validation  
+
+- BMC/Host record consistency  
+
+
+
+### **5. Logging & Structured Output**
+
+- JSON logs  
+
+- Human-readable summaries  
+
+- Categorized errors  
+
+- Timestamped logging  
 
 
 
@@ -98,45 +98,45 @@ This toolkit also serves as the automation backend for the \*\*AutoOps Resolver\
 
 
 
-\## 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 
 
-\### \*\*Python\*\*
+### **Python**
 
-\- Python 3  
+- Python 3  
 
-\- Subprocess orchestration  
+- Subprocess orchestration  
 
-\- JSON output handling  
+- JSON output handling  
 
-\- Redfish API triggers  
+- Redfish API triggers  
 
-\- Optional parallel execution  
-
-
-
-\### \*\*Bash\*\*
-
-\- Ping tests  
-
-\- DNS (nslookup/dig)  
-
-\- BMC reachability  
-
-\- MAC/IP extraction  
+- Optional parallel execution  
 
 
 
-\### \*\*External Tools\*\*
+### **Bash**
 
-\- Redfish utilities  
+- Ping tests  
 
-\- ipmitool / curl  
+- DNS (nslookup/dig)  
 
-\- NetBatch integration  
+- BMC reachability  
 
-\- Replaceable metadata sources  
+- MAC/IP extraction  
+
+
+
+### **External Tools**
+
+- Redfish utilities  
+
+- ipmitool / curl  
+
+- NetBatch integration  
+
+- Replaceable metadata sources  
 
 
 
@@ -144,7 +144,7 @@ This toolkit also serves as the automation backend for the \*\*AutoOps Resolver\
 
 
 
-\## 📁 Repository Structure
+## Repository Structure
 
 
 
@@ -154,45 +154,45 @@ infra-automation-toolkit/
 
 ├── python/
 
-│   ├── check\_hosts.py
+│   ├── check_hosts.py
 
-│   ├── server\_health\_profile.py
+│   ├── server_health_profile.py
 
-│   ├── invoke\_power\_on.py
+│   ├── invoke_power_on.py
 
-│   ├── invoke\_fix\_cobbler.py
+│   ├── invoke_fix_cobbler.py
 
-│   ├── run\_action\_nb.py
+│   ├── run_action_nb.py
 
 │   └── utils/
 
-│       ├── dns\_utils.py
+│       ├── dns_utils.py
 
-│       ├── redfish\_utils.py
+│       ├── redfish_utils.py
 
-│       ├── network\_utils.py
+│       ├── network_utils.py
 
 │       └── output.py
 
 ├── bash/
 
-│   ├── check\_ping.sh
+│   ├── check_ping.sh
 
-│   ├── check\_dns.sh
+│   ├── check_dns.sh
 
-│   ├── check\_bmc.sh
+│   ├── check_bmc.sh
 
-│   ├── check\_mac\_ip.sh
+│   ├── check_mac_ip.sh
 
 │   └── common.sh
 
 └── examples/
 
-&nbsp;   ├── sample\_output.json
+&nbsp;   ├── sample_output.json
 
-&nbsp;   ├── session\_demo.txt
+&nbsp;   ├── session_demo.txt
 
-&nbsp;   └── troubleshooting\_flow.md
+&nbsp;   └── troubleshooting_flow.md
 
 ```
 
@@ -202,51 +202,51 @@ infra-automation-toolkit/
 
 
 
-\## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 
 
-\### \*\*DevOps / SRE\*\*
+### **DevOps / SRE**
 
-\- Automated diagnostics  
+- Automated diagnostics  
 
-\- Redfish integration  
+- Redfish integration  
 
-\- PXE automation  
+- PXE automation  
 
-\- Metadata consistency checks  
-
-
-
-\### \*\*Python Engineering\*\*
-
-\- Modular utilities  
-
-\- Clean architecture  
-
-\- JSON logging  
-
-\- Error grouping  
+- Metadata consistency checks  
 
 
 
-\### \*\*Linux / Networking\*\*
+### **Python Engineering**
 
-\- DNS validation  
+- Modular utilities  
 
-\- SSH/BMC checks  
+- Clean architecture  
 
-\- MAC/IP consistency  
+- JSON logging  
+
+- Error grouping  
 
 
 
-\### \*\*Automation Design\*\*
+### **Linux / Networking**
 
-\- Defensive scripting  
+- DNS validation  
 
-\- Reusable components  
+- SSH/BMC checks  
 
-\- Operator-friendly outputs  
+- MAC/IP consistency  
+
+
+
+### **Automation Design**
+
+- Defensive scripting  
+
+- Reusable components  
+
+- Operator-friendly outputs  
 
 
 
@@ -254,11 +254,11 @@ infra-automation-toolkit/
 
 
 
-\## 📦 Getting Started
+## Getting Started
 
 
 
-\### \*\*Clone Repository\*\*
+### **Clone Repository**
 
 ```
 
@@ -274,63 +274,45 @@ cd infra-automation-toolkit
 
 
 
-\## ▶️ Running Python Scripts
+## Running Python Scripts
 
 
 
-\### \*\*Check host\*\*
-
-```
-
-python3 python/check\_hosts.py scce01120103
+### **Check host**
 
 ```
 
-
-
-\### \*\*Health profile\*\*
-
-```
-
-python3 python/server\_health\_profile.py --node scce01120103 --site sc
+python3 python/check_hosts.py scce01120103
 
 ```
 
 
 
-\### \*\*PXE rebuild\*\*
+### **Health profile**
 
 ```
 
-python3 python/invoke\_fix\_cobbler.py --node scce01120103
-
-```
-
-
-
-\### \*\*Redfish power\*\*
-
-```
-
-python3 python/invoke\_power\_on.py --server scce01120103 --action PowerOn
+python3 python/server_health_profile.py --node scce01120103 --site sc
 
 ```
 
 
 
----
-
-
-
-\## ▶️ Running Bash Scripts
-
-
+### **PXE rebuild**
 
 ```
 
-bash bash/check\_bmc.sh scce01120103
+python3 python/invoke_fix_cobbler.py --node scce01120103
 
-bash bash/check\_dns.sh scce01120103
+```
+
+
+
+### **Redfish power**
+
+```
+
+python3 python/invoke_power_on.py --server scce01120103 --action PowerOn
 
 ```
 
@@ -340,7 +322,25 @@ bash bash/check\_dns.sh scce01120103
 
 
 
-\## 📝 Sample Output
+## Running Bash Scripts
+
+
+
+```
+
+bash bash/check_bmc.sh scce01120103
+
+bash bash/check_dns.sh scce01120103
+
+```
+
+
+
+---
+
+
+
+## Sample Output
 
 
 
@@ -354,7 +354,7 @@ Site: sc
 
 
 
-\[Network]
+[Network]
 
 ✓ Ping reachable
 
@@ -362,7 +362,7 @@ Site: sc
 
 
 
-\[DNS]
+[DNS]
 
 ✓ Forward lookup OK
 
@@ -372,7 +372,7 @@ Site: sc
 
 
 
-\[BMC]
+[BMC]
 
 ✓ Reachable
 
@@ -380,7 +380,7 @@ Site: sc
 
 
 
-\[MAC/IP]
+[MAC/IP]
 
 ✓ Host MAC matches metadata
 
@@ -398,15 +398,15 @@ Result: Host is healthy.
 
 
 
-\## 🧱 Integrations
+## Integrations
 
-\- AutoOps PowerShell  
+- AutoOps PowerShell  
 
-\- AutoOps Web (.NET)  
+- AutoOps Web (.NET)  
 
-\- ServiceNow automations  
+- ServiceNow automations  
 
-\- NetBatch queueing  
+- NetBatch queueing  
 
 
 
@@ -414,23 +414,11 @@ Result: Host is healthy.
 
 
 
-\## 📄 License
+## License
 
 MIT License
 
 
-
----
-
-
-
-\## 🤝 Contact
-
-\*\*Josue David Cruz Lopez\*\*  
-
-Email: cruzlopez.josuedavid96@gmail.com  
-
-LinkedIn: https://linkedin.com/in/josue-david-c
 
 
 
