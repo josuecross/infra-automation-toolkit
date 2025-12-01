@@ -1,0 +1,73 @@
+Name                           : scce02050704.zsc7.intel.com
+Automatic Installation Template : <<inherit>>
+Automatic Installation Template Metadata : {}
+TFTP Boot Files                : {}
+Boot loaders                   : <<inherit>>
+Comment                        : 
+Enable iPXE?                   : True
+Fetchable Files                : {}
+DHCP Filename Override         : <<inherit>>
+Gateway                        : 
+Hostname                       : scce02050704.zsc7.intel.com
+Image                          : 
+IPv6 Autoconfiguration         : False
+IPv6 Default Device            : 
+Kernel Options                 : {}
+Kernel Options (Post Install)  : {}
+Management Classes             : <<inherit>>
+Management Parameters          : <<inherit>>
+Name Servers                   : []
+Name Servers Search Path       : []
+Netboot Enabled                : True
+Next Server (IPv4) Override    : <<inherit>>
+Next Server (IPv6) Override    : <<inherit>>
+Owners                         : ['admin']
+Power Management Address       : 
+Power Management ID            : 
+Power Identity File            : 
+Power Management Options       : 
+Power Management Password      : 
+Power Management Type          : 
+Power Management Username      : 
+Profile                        : HPC_Prod_SLES12sp5
+Internal Proxy                 : <<inherit>>
+Redhat Management Key          : <<inherit>>
+Repos Enabled                  : False
+Serial Baud Rate               : -1
+Serial Device #                : -1
+Server Override                : <<inherit>>
+Status                         : production
+Template Files                 : {}
+Virt Auto Boot                 : <<inherit>>
+Virt CPUs                      : <<inherit>>
+Virt Disk Driver Type          : <<inherit>>
+Virt File Size(GB)             : <<inherit>>
+Virt Path                      : <<inherit>>
+Virt PXE Boot                  : False
+Virt RAM (MB)                  : <<inherit>>
+Virt Type                      : <<inherit>>
+Interface =====                : eth0
+Bonding Opts                   : 
+Bridge Opts                    : 
+CNAMES                         : []
+InfiniBand Connected Mode      : False
+DHCP Tag                       : 
+DNS Name                       : 
+Per-Interface Gateway          : 
+Master Interface               : 
+Interface Type                 : na
+IP Address                     : 
+IPv6 Address                   : 
+IPv6 Default Gateway           : 
+IPv6 MTU                       : 
+IPv6 Prefix                    : 
+IPv6 Secondaries               : []
+IPv6 Static Routes             : []
+MAC Address                    : 3c:ec:ef:71:e1:8c
+Management Interface           : False
+MTU                            : 
+Subnet Mask                    : 
+Static                         : False
+Static Routes                  : []
+Virt Bridge                    : <<inherit>>
+
