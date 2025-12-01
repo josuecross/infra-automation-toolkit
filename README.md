@@ -144,64 +144,6 @@ This toolkit also serves as the automation backend for the **AutoOps Resolver** 
 
 
 
-## Repository Structure
-
-
-
-```
-
-infra-automation-toolkit/
-
-├── python/
-
-│   ├── check_hosts.py
-
-│   ├── server_health_profile.py
-
-│   ├── invoke_power_on.py
-
-│   ├── invoke_fix_cobbler.py
-
-│   ├── run_action_nb.py
-
-│   └── utils/
-
-│       ├── dns_utils.py
-
-│       ├── redfish_utils.py
-
-│       ├── network_utils.py
-
-│       └── output.py
-
-├── bash/
-
-│   ├── check_ping.sh
-
-│   ├── check_dns.sh
-
-│   ├── check_bmc.sh
-
-│   ├── check_mac_ip.sh
-
-│   └── common.sh
-
-└── examples/
-
-&nbsp;   ├── sample_output.json
-
-&nbsp;   ├── session_demo.txt
-
-&nbsp;   └── troubleshooting_flow.md
-
-```
-
-
-
----
-
-
-
 ## Skills Demonstrated
 
 
